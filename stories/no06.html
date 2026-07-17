@@ -94,7 +94,6 @@
   gap: 20px;
 }
 </style>
-
 </head>
 <body>
 
@@ -137,94 +136,103 @@
       <h2 class="section-title" style="margin-top:48px;"><span class="title-bracket">[</span> No.6 キャラクター <span class="title-bracket">]</span></h2>
 
 <!-- ここからグループスライダー -->
-      <div class="char-slider" id="slider-no05">
+      <div class="char-slider" id="slider-no06">
 
         <div class="char-slider-header">
           <div class="char-group-info">
-            <div class="char-group-name" id="group-name-no05">少年と狐の神様</div>
-            <div class="char-group-desc" id="group-desc-no05">妖魔界に迷い込んだ少年と妖魔界の神様</div>
+            <div class="char-group-name" id="group-name-no06">少年と狐の神様</div>
+            <div class="char-group-desc" id="group-desc-no06">妖魔界に迷い込んだ少年と妖魔界の神様</div>
           </div>
           <div class="char-nav">
-            <button class="char-nav-btn" id="prev-no05" onclick="slideGroup('no05', -1)" disabled>◂</button>
-            <span class="char-nav-counter" id="counter-no05">1 / 2</span>
-            <button class="char-nav-btn" id="next-no05" onclick="slideGroup('no05', 1)">▸</button> </div>
+            <button class="char-nav-btn" id="prev-no06" onclick="slideGroup('no06', -1)" disabled>◂</button>
+            <span class="char-nav-counter" id="counter-no06">1 / 2</span>
+            <button class="char-nav-btn" id="next-no06" onclick="slideGroup('no06', 1)">▸</button>
+          </div>
         </div>
 
+        <div class="char-groups" id="groups-no06">
 
- <div class="char-groups" id="groups-no05">
-
-          <!-- グループ1:　少年と狐の神様 -->
+          <!-- グループ1: 少年と狐の神様(2人 → カルーセル不要) -->
           <div class="char-group active"
                data-name="少年と狐の神様"
                data-desc="妖魔界に迷い込んだ少年と狐の神様">
 
-
-         
-<div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-card" style="border-top-color: #A4C3D6;">
               <div class="character-portrait">立ち絵準備中</div>
               <div class="character-name">船ヶ瀬原　メトロイ</div>
               <div class="character-role" style="color: #000000;">主人公</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。 </div>
-        </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">狐雪</div>
-              <div class="character-role" style="color: #000000;">狐の神様</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。 </div>
-        </div></div>
-
-<!-- グループ2:  妖魔界の者たち-->
-         <div class="char-group"
-               data-name="妖怪たち"
-               data-desc="妖魔界で出会う妖怪たち。国々で争いが絶えない。">
+              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+            </div>
 
             <div class="character-card" style="border-top-color: #A4C3D6;">
               <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">狸久斗</div>
-              <div class="character-role" style="color: #000000;">化け狸</div>
+              <div class="character-name">狐雪</div>
+              <div class="character-role" style="color: #000000;">狐の神様</div>
               <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
             </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">飄</div>
-              <div class="character-role" style="color: #000000;">鎌鼬</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <!-- グループ2: 妖怪たち(6人 → カルーセル) -->
+          <div class="char-group"
+               data-name="妖怪たち"
+               data-desc="妖魔界で出会う妖怪たち。国々で争いが絶えない。">
+
+            <div class="char-carousel">
+              <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+              <div class="char-carousel-track">
+
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait">立ち絵準備中</div>
+                  <div class="character-name">狸久斗</div>
+                  <div class="character-role" style="color: #000000;">化け狸</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
+
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait">立ち絵準備中</div>
+                  <div class="character-name">飄</div>
+                  <div class="character-role" style="color: #000000;">鎌鼬</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
+
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait">立ち絵準備中</div>
+                  <div class="character-name">二条　黄金子</div>
+                  <div class="character-role" style="color: #000000;">八尾比丘尼</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
+
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait">立ち絵準備中</div>
+                  <div class="character-name">徒然</div>
+                  <div class="character-role" style="color: #000000;">三毛猫の猫又</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
+
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait">立ち絵準備中</div>
+                  <div class="character-name">犬神</div>
+                  <div class="character-role" style="color: #000000;">犬神国の殿様</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
+
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait">立ち絵準備中</div>
+                  <div class="character-name">魎鬼姫</div>
+                  <div class="character-role" style="color: #000000;">鬼の国の姫</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
+
+              </div>
+              <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
             </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">二条　黄金子</div>
-              <div class="character-role" style="color: #000000;">八尾比丘尼</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
+          </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">徒然</div>
-              <div class="character-role" style="color: #000000;">三毛猫の猫又</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">犬神</div>
-              <div class="character-role" style="color: #000000;">犬神国の殿様</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">魎鬼姫</div>
-              <div class="character-role" style="color: #000000;">鬼の国の姫</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-
-
-
+        </div>
       </div>
+      <!-- グループスライダーここまで -->
 
       <div class="story-pager">
         <a href="no05.html">◂ No.5 廃れた夢</a>
@@ -256,9 +264,32 @@ function slideGroup(id, direction) {
   document.getElementById('prev-' + id).disabled = (next === 0);
   document.getElementById('next-' + id).disabled = (next === groups.length - 1);
 }
-</script>
-	
 
+function scrollChar(btn, direction) {
+  const track = btn.closest('.char-carousel').querySelector('.char-carousel-track');
+  const card = track.querySelector('.character-card');
+  const gap = 20;
+  const scrollAmount = card.offsetWidth + gap;
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.char-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.char-carousel-track');
+    const prevBtn = carousel.querySelector('.char-carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.char-carousel-btn.next');
+
+    function updateButtons() {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+
+    track.addEventListener('scroll', updateButtons);
+    updateButtons();
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarousels);
+</script>
 
 </body>
 </html>
