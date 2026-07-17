@@ -93,6 +93,9 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
+
+
+
 </style>
 </head>
 <body>
@@ -136,150 +139,153 @@
       <h2 class="section-title" style="margin-top:48px;"><span class="title-bracket">[</span> No.3 キャラクター <span class="title-bracket">]</span></h2>
 
 <!-- ここからグループスライダー -->
-      <div class="char-slider" id="slider-no03">
+<div class="char-slider" id="slider-no03">
 
-        <div class="char-slider-header">
-          <div class="char-group-info">
-            <div class="char-group-name" id="group-name-no03">魔獣部現世監視課</div>
-            <div class="char-group-desc" id="group-desc-no03">前世の獣の力を継承した「魔獣人」で構成される警察</div>
+  <div class="char-slider-header">
+    <div class="char-group-info">
+      <div class="char-group-name" id="group-name-no03">魔獣部現世監視課</div>
+      <div class="char-group-desc" id="group-desc-no03">前世の獣の力を継承した「魔獣人」で構成される警察</div>
+    </div>
+    <div class="char-nav">
+      <button class="char-nav-btn" id="prev-no03" onclick="slideGroup('no03', -1)" disabled>◂</button>
+      <span class="char-nav-counter" id="counter-no03">1 / 2</span>
+      <button class="char-nav-btn" id="next-no03" onclick="slideGroup('no03', 1)">▸</button>
+    </div>
+  </div>
+
+  <div class="char-groups" id="groups-no03">
+
+    <!-- グループ1: 魔獣部現世監視課 -->
+    <div class="char-group active"
+         data-name="魔獣部現世監視課"
+         data-desc="前世の獣の力を継承した「魔獣人」で構成される警察">
+
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/milia.PNG"></div>
+            <div class="character-name">ミリア・<br>ロンド</div>
+            <div class="character-role">主人公</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
           </div>
-          <div class="char-nav">
-            <button class="char-nav-btn" id="prev-no03" onclick="slideGroup('no03', -1)" disabled>◂</button>
-            <span class="char-nav-counter" id="counter-no03">1 / 2</span>
-            <button class="char-nav-btn" id="next-no03" onclick="slideGroup('no03', 1)">▸</button>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/maple.png"></div>
+            <div class="character-name">メープル・<br>マルデリカ</div>
+            <div class="character-role">戦闘狂トラブルメーカー</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
           </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/kuroto.png"></div>
+            <div class="character-name">クロト</div>
+            <div class="character-role">寡黙な副隊長</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/cashew.png"></div>
+            <div class="character-name">カシュ―</div>
+            <div class="character-role">メカニック少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/popn.png"></div>
+            <div class="character-name">ポップン</div>
+            <div class="character-role">毒使いのレディ</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/chiko.png"></div>
+            <div class="character-name">チコ</div>
+            <div class="character-role">警察組家事担当</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
         </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
+      </div>
 
- <div class="char-groups" id="groups-no03">
+    </div>
 
-          <!-- グループ1: 魔獣部現世監視課 -->
-          <div class="char-group active"
-               data-name="魔獣部現世監視課"
-               data-desc="前世の獣の力を継承した「魔獣人」で構成される警察">
+    <!-- グループ2: 来訪者たち -->
+    <div class="char-group"
+         data-name="来訪者たち"
+         data-desc="迷いこんだ居場所無き者たち">
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-          <div class="character-portrait"><img src="../images/Milia.PNG"></div>
-          <div class="character-name">ミリア・<br>ロンド</div>
-          <div class="character-role">主人公</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/soa.png"></div>
+            <div class="character-name">ソア</div>
+            <div class="character-role" style="color: #000000;">ときめきの魔法少女</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
           </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/ria.png"></div>
+            <div class="character-name">リア</div>
+            <div class="character-role" style="color: #000000;">妖艶な魔女</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/rupme.png"></div>
+            <div class="character-name">ルプーメ・<br>カーリデルマ</div>
+            <div class="character-role" style="color: #000000;">臆病で冷徹な黒兎</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/harumia.png"></div>
+            <div class="character-name">ハルミア・<br>ルーデンス</div>
+            <div class="character-role" style="color: #000000;">死神メイド</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait"><img src="../images/sokura.png"></div>
+            <div class="character-name">ソクラ</div>
+            <div class="character-role" style="color: #000000;">悪魔メイド</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ぬーちゃん</div>
+            <div class="character-role" style="color: #000000;">電波少女</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">めーちゃん</div>
+            <div class="character-role" style="color: #000000;">電撃少女</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ソヨメ・<br>フォーサイス</div>
+            <div class="character-role" style="color: #000000;">異世界のプリンス</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
         </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
+      </div>
 
-        <div class="character-card" style="border-top-color: #A4C3D6;">
-          <div class="character-portrait"><img src="../images/Maple.png"></div>
-          <div class="character-name">メープル・<br>マルデリカ</div>
-          <div class="character-role">戦闘狂トラブルメーカー</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
+    </div>
 
-       <div class="character-card" style="border-top-color: #A4C3D6;">
-          <div class="character-portrait"><img src="../images/Kuroto.png"></div>
-          <div class="character-name">クロト</div>
-          <div class="character-role">寡黙な副隊長</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-          <div class="character-portrait"><img src="../images/Cashew.png"></div>
-          <div class="character-name">カシュ―</div>
-          <div class="character-role">メカニック少年</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-          <div class="character-portrait"><img src="../images/Popn.png"></div>
-          <div class="character-name">ポップン</div>
-          <div class="character-role">毒使いのレディ</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-          <div class="character-portrait"><img src="../images/Chiko.png"></div>
-          <div class="character-name">チコ</div>
-          <div class="character-role">警察組家事担当</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-       </div>
+  </div>
 </div>
-
-<!-- グループ2:  来訪者たち-->
-          <div class="char-group"
-               data-name="来訪者たち"
-               data-desc="迷いこんだ居場所無き者たち">
-
-            <div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Soa.png"></div>
-              <div class="character-name">ソア</div>
-              <div class="character-role" style="color: #000000;">ときめきの魔法少女</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Ria.png"></div>
-              <div class="character-name">リア</div>
-              <div class="character-role" style="color: #000000;">妖艶な魔女</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-          
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Rupme.png"></div>
-              <div class="character-name">ルプーメ・<br>カーリデルマ</div>
-              <div class="character-role" style="color: #000000;">臆病で冷徹な黒兎</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-          
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Harumia.png"></div>
-              <div class="character-name">ハルミア・<br>ルーデンス</div>
-              <div class="character-role" style="color: #000000;">死神メイド</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Sokura.png"></div>
-              <div class="character-name">ソクラ</div>
-              <div class="character-role" style="color: #000000;">悪魔メイド</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-          
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ぬーちゃん</div>
-              <div class="character-role" style="color: #000000;">電波少女</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">めーちゃん</div>
-              <div class="character-role" style="color: #000000;">電撃少女</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ソヨメ・<br>フォーサイス</div>
-              <div class="character-role" style="color: #000000;">異世界のプリンス</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-        </div>
-     
-
-      <!-- グループスライダーここまで -->
-
+<!-- グループスライダーここまで -->
 
       <div class="story-pager">
         <a href="no02.html">◂ No.2 記憶紡ぎの一夜</a>
@@ -290,7 +296,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 夜鍵幸 ― 夜の図書館</p>
+    <p>© 夜鍵幸 ― メアリーは魔女</p>
   </footer>
 
 <script>
@@ -311,8 +317,32 @@ function slideGroup(id, direction) {
   document.getElementById('prev-' + id).disabled = (next === 0);
   document.getElementById('next-' + id).disabled = (next === groups.length - 1);
 }
-</script>
 
+function scrollChar(btn, direction) {
+  const track = btn.closest('.char-carousel').querySelector('.char-carousel-track');
+  const card = track.querySelector('.character-card');
+  const gap = 20;
+  const scrollAmount = card.offsetWidth + gap;
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.char-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.char-carousel-track');
+    const prevBtn = carousel.querySelector('.char-carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.char-carousel-btn.next');
+
+    function updateButtons() {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+
+    track.addEventListener('scroll', updateButtons);
+    updateButtons();
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarousels);
+</script>
 
 
 </body>
