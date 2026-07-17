@@ -146,70 +146,79 @@
           <div class="char-nav">
             <button class="char-nav-btn" id="prev-no08" onclick="slideGroup('no08', -1)" disabled>◂</button>
             <span class="char-nav-counter" id="counter-no08">1 / 2</span>
-            <button class="char-nav-btn" id="next-no08" onclick="slideGroup('no08', 1)">▸</button> </div>
+            <button class="char-nav-btn" id="next-no08" onclick="slideGroup('no08', 1)">▸</button>
+          </div>
         </div>
 
+        <div class="char-groups" id="groups-no08">
 
- <div class="char-groups" id="groups-no08">
-
-          <!-- グループ1:　偶然の独りぼっちたち -->
+          <!-- グループ1: 偶然の独りぼっちたち(4人 → カルーセル) -->
           <div class="char-group active"
                data-name="偶然の独りぼっちたち"
                data-desc="高校生活に落胆した夏休みの少女たち">
 
+            <div class="char-carousel">
+              <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+              <div class="char-carousel-track">
 
-         
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Yuzuki.png"></div>
-              <div class="character-name">北条　柚樹</div>
-              <div class="character-role" style="color: #000000;">主人公</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。 </div>
-        </div>
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait"><img src="../images/yuzuki.png"></div>
+                  <div class="character-name">北条　柚樹</div>
+                  <div class="character-role" style="color: #000000;">主人公</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Emi.png"></div>
-              <div class="character-name">日咲　江美</div>
-              <div class="character-role" style="color: #000000;">怖がりなご令嬢</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。 </div>
-        </div>
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait"><img src="../images/emi.png"></div>
+                  <div class="character-name">日咲　江美</div>
+                  <div class="character-role" style="color: #000000;">怖がりなご令嬢</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Ramune.png"></div>
-              <div class="character-name">夜方　ラムネ</div>
-              <div class="character-role" style="color: #000000;">才色兼備</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。 </div>
-        </div>
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait"><img src="../images/ramune.png"></div>
+                  <div class="character-name">夜方　ラムネ</div>
+                  <div class="character-role" style="color: #000000;">才色兼備</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Natuyo.png"></div>
-              <div class="character-name">南ヶ原　夏代</div>
-              <div class="character-role" style="color: #000000;">お転婆な姉御肌</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。 </div>
-        </div>
-        </div>
+                <div class="character-card" style="border-top-color: #A4C3D6;">
+                  <div class="character-portrait"><img src="../images/natuyo.png"></div>
+                  <div class="character-name">南ヶ原　夏代</div>
+                  <div class="character-role" style="color: #000000;">お転婆な姉御肌</div>
+                  <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+                </div>
 
-<!-- グループ2:  村の少女たち-->
-         <div class="char-group"
+              </div>
+              <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
+            </div>
+
+          </div>
+
+          <!-- グループ2: 村の少女たち(2人 → カルーセル不要) -->
+          <div class="char-group"
                data-name="村の少女たち"
                data-desc="柚樹たちが出会う村の少女">
 
-           
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/HImawari.png"></div>
+            <div class="character-card" style="border-top-color: #A4C3D6;">
+              <div class="character-portrait"><img src="../images/himawari.png"></div>
               <div class="character-name">日向　向日葵</div>
               <div class="character-role" style="color: #000000;">村で孤独なじゃじゃ馬娘</div>
               <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
             </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait"><img src="../images/Sumire.png"></div>
+            <div class="character-card" style="border-top-color: #A4C3D6;">
+              <div class="character-portrait"><img src="../images/sumire.png"></div>
               <div class="character-name">銀雪　純恋</div>
               <div class="character-role" style="color: #000000;">何かを探している</div>
               <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
             </div>
 
+          </div>
 
+        </div>
       </div>
+      <!-- グループスライダーここまで -->
 
       <div class="story-pager">
         <a href="no07.html">◂ No.7 モノクロ心霊体験</a>
@@ -241,8 +250,32 @@ function slideGroup(id, direction) {
   document.getElementById('prev-' + id).disabled = (next === 0);
   document.getElementById('next-' + id).disabled = (next === groups.length - 1);
 }
-</script>
 
+function scrollChar(btn, direction) {
+  const track = btn.closest('.char-carousel').querySelector('.char-carousel-track');
+  const card = track.querySelector('.character-card');
+  const gap = 20;
+  const scrollAmount = card.offsetWidth + gap;
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.char-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.char-carousel-track');
+    const prevBtn = carousel.querySelector('.char-carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.char-carousel-btn.next');
+
+    function updateButtons() {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+
+    track.addEventListener('scroll', updateButtons);
+    updateButtons();
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarousels);
+</script>
 
 </body>
 </html>
