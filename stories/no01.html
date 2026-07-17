@@ -97,7 +97,6 @@
 </head>
 <body>
 
-
   <div class="stars"></div>
 
   <header class="site-header">
@@ -133,96 +132,106 @@
         </p>
  <div class="window-cursor">▼</div>
       </div>
-      
+
 
 <h2 class="section-title" style="margin-top:48px;"><span class="title-bracket">[</span> No.1 キャラクター <span class="title-bracket">]</span></h2>
 
 <!-- ここからグループスライダー -->
-      <div class="char-slider" id="slider-no01">
+<div class="char-slider" id="slider-no01">
 
-        <div class="char-slider-header">
-          <div class="char-group-info">
-            <div class="char-group-name" id="group-name-no01">パーティ組</div>
-            <div class="char-group-desc" id="group-desc-no01">カトレアと共に旅をする仲間たち</div>
-          </div>
-          <div class="char-nav">
-            <button class="char-nav-btn" id="prev-no01" onclick="slideGroup('no01', -1)" disabled>◂</button>
-            <span class="char-nav-counter" id="counter-no01">1 / 2</span>
-            <button class="char-nav-btn" id="next-no01" onclick="slideGroup('no01', 1)">▸</button>
-          </div>
-        </div>
+  <div class="char-slider-header">
+    <div class="char-group-info">
+      <div class="char-group-name" id="group-name-no01">パーティ組</div>
+      <div class="char-group-desc" id="group-desc-no01">カトレアと共に旅をする仲間たち</div>
+    </div>
+    <div class="char-nav">
+      <button class="char-nav-btn" id="prev-no01" onclick="slideGroup('no01', -1)" disabled>◂</button>
+      <span class="char-nav-counter" id="counter-no01">1 / 2</span>
+      <button class="char-nav-btn" id="next-no01" onclick="slideGroup('no01', 1)">▸</button>
+    </div>
+  </div>
 
-        <div class="char-groups" id="groups-no01">
+  <div class="char-groups" id="groups-no01">
 
-          <!-- グループ1: パーティ組 -->
-          <div class="char-group active"
-               data-name="パーティ組"
-               data-desc="カトレアと共に旅をする仲間たち">
+    <!-- グループ1: パーティ組(4人 → カルーセル) -->
+    <div class="char-group active"
+         data-name="パーティ組"
+         data-desc="カトレアと共に旅をする仲間たち">
 
-        <div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Cattleya.png"></div>
-          <div class="character-name">カトレア・<br>ルーデンス</div>
-          <div class="character-role">主人公</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
 
-<div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Goley.png"></div>
-          <div class="character-name">ゴーレー・<br>ベルナールド</div>
-          <div class="character-role">元王国兵士</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
-
-<div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Poison.png"></div>
-          <div class="character-name">ポイズン・<br>デットリー</div>
-          <div class="character-role">独の調合士見習い</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
-
-<div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Hedro.png"></div>
-          <div class="character-name">ヘドロさん</div>
-          <div class="character-role">世話焼き大蛇</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
-      </div>
-
-   <!-- グループ2: 港組 -->
-          <div class="char-group"
-               data-name="港の者"
-               data-desc="港の街でカトレアが出会う者たち">
-
-            <div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">オズ・ペコット</div>
-              <div class="character-role" style="color: #000000;">女海賊</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/cattleya.png"></div>
+            <div class="character-name">カトレア・<br>ルーデンス</div>
+            <div class="character-role">主人公</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
             </div>
+          </div>
 
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">沖沢</div>
-              <div class="character-role" style="color: #000000;">海の者をたぶらかすセイレーン</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/goley.png"></div>
+            <div class="character-name">ゴーレー・<br>ベルナールド</div>
+            <div class="character-role">元王国兵士</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
+            </div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/poison.png"></div>
+            <div class="character-name">ポイズン・<br>デットリー</div>
+            <div class="character-role">独の調合士見習い</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
+            </div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/hedro.png"></div>
+            <div class="character-name">ヘドロさん</div>
+            <div class="character-role">世話焼き大蛇</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
             </div>
           </div>
 
         </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
       </div>
-      <!-- グループスライダーここまで -->
+
+    </div>
+
+    <!-- グループ2: 港の者(2人 → カルーセル不要) -->
+    <div class="char-group"
+         data-name="港の者"
+         data-desc="港の街でカトレアが出会う者たち">
+
+      <div class="character-card" style="border-top-color: #A4C3D6;">
+        <div class="character-portrait">立ち絵準備中</div>
+        <div class="character-name">オズ・ペコット</div>
+        <div class="character-role" style="color: #000000;">女海賊</div>
+        <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+      </div>
+
+      <div class="character-card" style="border-top-color: #A4C3D6;">
+        <div class="character-portrait">立ち絵準備中</div>
+        <div class="character-name">沖沢</div>
+        <div class="character-role" style="color: #000000;">海の者をたぶらかすセイレーン</div>
+        <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- グループスライダーここまで -->
 
 
       <div class="story-pager">
-       
+
         <a href="no02.html">No.2 記憶紡ぎの一夜 ▸</a>
       </div>
 
@@ -232,7 +241,6 @@
   <footer class="site-footer">
     <p>© 夜鍵幸 ― メアリーは魔女</p>
   </footer>
-</footer>
 
 <script>
 function slideGroup(id, direction) {
@@ -252,8 +260,32 @@ function slideGroup(id, direction) {
   document.getElementById('prev-' + id).disabled = (next === 0);
   document.getElementById('next-' + id).disabled = (next === groups.length - 1);
 }
+
+function scrollChar(btn, direction) {
+  const track = btn.closest('.char-carousel').querySelector('.char-carousel-track');
+  const card = track.querySelector('.character-card');
+  const gap = 20;
+  const scrollAmount = card.offsetWidth + gap;
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.char-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.char-carousel-track');
+    const prevBtn = carousel.querySelector('.char-carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.char-carousel-btn.next');
+
+    function updateButtons() {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+
+    track.addEventListener('scroll', updateButtons);
+    updateButtons();
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarousels);
 </script>
 
-</body>
 </body>
 </html>
