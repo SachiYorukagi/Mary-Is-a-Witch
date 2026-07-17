@@ -563,7 +563,138 @@ text-align: center;
   font-size: 16px;
 }
 
+.rebirth-cycle {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  max-width: 100%;
+  margin: 60px auto;
+}
 
+.cycle-ring {
+  position: absolute;
+  inset: 6%;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  animation: ring-rotate 60s linear infinite;
+}
+
+@keyframes ring-rotate {
+  to { transform: rotate(360deg); }
+}
+
+.cycle-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  padding: 14px 16px;
+  background: var(--bg-base);
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-main);
+  box-sizing: border-box;
+}
+
+.node-index {
+  display: block;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--border-soft);
+  margin-bottom: 6px;
+  letter-spacing: 0.1em;
+}
+
+.node-top    { top: 8%;  left: 50%; }
+.node-bottom { top: 92%; left: 50%; }
+.node-left   { top: 50%; left: 8%; }
+.node-right  { top: 50%; left: 92%; width: 170px; }
+
+.cycle-arrow {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: var(--text-main);
+  font-size: 20px;
+  opacity: 0.85;
+  animation: arrow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes arrow-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.arrow-tr { top: 22%; left: 78%; }
+.arrow-br { top: 78%; left: 78%; }
+.arrow-bl { top: 78%; left: 22%; }
+.arrow-tl { top: 22%; left: 22%; }
+
+
+/* ---------- キャラクターカルーセル ---------- */
+.char-carousel {
+  position: relative;
+}
+
+.char-carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.char-carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+.char-carousel-track::-webkit-scrollbar-thumb {
+  background: var(--border-soft);
+  border-radius: 4px;
+}
+.char-carousel-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.char-carousel-track .character-card {
+  flex: 0 0 100%;
+  max-width: 340px;
+  scroll-snap-align: center;
+}
+
+.char-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  color: var(--text-main);
+  font-family: var(--font-pixel);
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s ease;
+}
+
+.char-carousel-btn:hover {
+  border-color: var(--accent-mary);
+  color: var(--accent-mary);
+}
+
+.char-carousel-btn.prev { left: -4px; }
+.char-carousel-btn.next { right: -4px; }
+
+@media (max-width: 600px) {
+  .char-carousel-btn { display: none; } /* スマホはスワイプ操作のみ */
+}
 
 /* ---------- レスポンシブ ---------- */
 @media (max-width: 600px) {
