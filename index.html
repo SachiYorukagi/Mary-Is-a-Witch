@@ -9,7 +9,37 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"><script>
+const introText = "ここは、メアリーが追想する記憶が眠る場所。|\n異世界と現世が交差していく、物語のアーカイブです。";
+
+function typewriter(el, text, speed = 70, pauseTime = 700) {
+  el.innerHTML = '';
+  let i = 0;
+
+  function step() {
+    if (i >= text.length) return;
+    const char = text[i];
+
+    if (char === '|') {
+      i++;
+      setTimeout(step, pauseTime);
+      return;
+    }
+
+    el.innerHTML += (char === '\n') ? '<br>' : char;
+    i++;
+    setTimeout(step, speed);
+  }
+
+  step();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('intro-text');
+  typewriter(el, introText, 70);
+});
+</script>
+
 </head>
 <body>
 
@@ -32,14 +62,9 @@
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="message-window">
-       
-        <p class="window-text">
-          ここは、メアリーが追想する記憶が眠る場所。<br>
-          異世界と現世を交差していく<br>
-          物語のアーカイブです。
-        </p>
-        <div class="window-cursor">▼</div>
-      </div>
+  <p id="intro-text" class="window-text"></p>
+  <div class="window-cursor">▼</div>
+</div>
     </section>
 
     <!-- 作品一覧 -->
@@ -138,16 +163,16 @@
         <div class="status-panel">
           <div class="panel-header accent-blue">現世</div>
           <p class="panel-body">
-            人間が生きる世界。
-            異世界と対を成す。
+            人間が生きる世界。<br>
+            異世界と対を成す。<br>
           </p>
         </div>
 
         <div class="status-panel">
           <div class="panel-header accent-pink">魔界</div>
           <p class="panel-body">
-            悪魔も幽霊などさまざまな"見えざる者"が住む世界。
-	　　常に赤い月が出た夜になっている。またどの世界よりも広い。
+            悪魔も幽霊などさまざまな"見えざる者"が住む世界。<br>
+	　　常に赤い月が出た夜になっている。またどの世界よりも広い。<br>
             魔王が統治している。
           </p>
         </div>
@@ -155,8 +180,8 @@
         <div class="status-panel">
           <div class="panel-header accent-green">霊界</div>
           <p class="panel-body">
-            幽霊・地縛霊・守護霊など"魂のみの実体"が住む世界。
-　　　　　　霧が立ち込めて常に薄暗い。            
+            幽霊・地縛霊・守護霊など"魂のみの実体"が住む世界。<br>
+　　　　　　霧が立ち込めて常に薄暗い。<br>            
 　　　　　　時をつかさどる時計塔がある。
           </p>
         </div>
@@ -164,7 +189,7 @@
  <div class="status-panel">
           <div class="panel-header accent-green">妖魔界</div>
           <p class="panel-body">
-            魂を食らう妖怪・魑魅魍魎の住む世界。
+            魂を食らう妖怪・魑魅魍魎の住む世界。<br>
             十の物語はこれらの世界を行き来しながら進む。
           </p>
         </div>
@@ -184,46 +209,59 @@
     </section>
 <!-- 転生・記憶の鍵とオモヒデ -->
     <section class="section">
-      <h2 class="section-title"><span class="title-bracket">[</span> 転生と記憶の鍵 <span class="title-bracket">]</span></h2>
+  <h2 class="section-title"><span class="title-bracket">[</span> 転生と記憶の鍵 <span class="title-bracket">]</span></h2>
 
-      <div class="lore-block">
+  <div class="lore-block">
 
-        <div class="lore-item">
-          <h3 class="lore-heading">転生について</h3>
-          <p class="lore-body">異世界に転生する種族は前世次第。鍵を持つかどうかは神さま次第で、持たない者は死ぬ前から、持つ者は死後から転生が始まる。</p>
+    <div class="lore-item">
+      <h3 class="lore-heading">転生について</h3>
+      <p class="lore-body">異世界に転生する種族は前世次第。鍵を持つかどうかは神さま次第で、持たない者は死ぬ前から、持つ者は死後から転生が始まる。</p>
 
-          <div class="lore-diagram">
-            <div class="diagram-row">
-              <div class="diagram-box">現世で死ぬ</div>
-              <div class="diagram-arrow">↓</div>
-              
-            
-            <div class="lore-diagram">
-              <div class="diagram-row">
-                <div class="diagram-box">記憶の鍵を持つ者と持たざる者に分かれて異世界へ転生する</div>
-             
-                             
-                <div class="diagram-arrow">↓</div>
-                              
-             
-             
-                                <div class="diagram-box">異世界で死ぬ</div>
-                <div class="diagram-arrow">↓</div>
-                <div class="diagram-box">現世へ転生。記憶の鍵は持たない。</div>
-              
-         
+      <div class="rebirth-cycle">
+        <div class="cycle-ring"></div>
 
-        <div class="lore-item">
-          <h3 class="lore-heading">記憶の鍵とオモヒデ</h3>
-          <p class="lore-body">
-            異世界に転生する時に前世の記憶を持つ者が手にする鍵。大きさや装飾は個人差がある。鍵が壊れると自分の姿は消え、周りからも忘れられてしまう。忘れられた自分は「名も無き国」の住人となる。
-          </p>
-          <p class="lore-body" style="margin-top: 12px;">
-            また鍵を守っている前世の記憶の塊「オモヒデ」が取りついており、オモヒデに許された者は強大な力を得る。その力を持つ魔女を「鍵探しの魔女」とし、高貴な血の一族としてたたえられていた。          </p>
+        <div class="cycle-node node-top">
+          <span class="node-index">01</span>
+          現世で死ぬ
         </div>
 
+        <div class="cycle-arrow arrow-tr">↘</div>
+
+        <div class="cycle-node node-right">
+          <span class="node-index">02</span>
+          記憶の鍵を持つ者と持たざる者に分かれて異世界へ転生する
+        </div>
+
+       <div class="cycle-arrow arrow-br">↙</div>
+
+        <div class="cycle-node node-bottom">
+          <span class="node-index">03</span>
+          異世界で死ぬ
+        </div>
+
+       <div class="cycle-arrow arrow-bl">↖</div>
+
+        <div class="cycle-node node-left">
+          <span class="node-index">04</span>
+          現世へ転生。記憶の鍵は持たない。
+        </div>
+
+        <div class="cycle-arrow arrow-tl">↗</div>
       </div>
-    </section>
+    </div>
+
+    <div class="lore-item">
+      <h3 class="lore-heading">記憶の鍵とオモヒデ</h3>
+      <p class="lore-body">
+        異世界に転生する時に前世の記憶を持つ者が手にする鍵。大きさや装飾は個人差がある。鍵が壊れると自分の姿は消え、周りからも忘れられてしまう。忘れられた自分は「名も無き国」の住人となる。
+      </p>
+      <p class="lore-body" style="margin-top: 12px;">
+        また鍵を守っている前世の記憶の塊「オモヒデ」が取りついており、オモヒデに許された者は強大な力を得る。その力を持つ魔女を「鍵探しの魔女」とし、高貴な血の一族としてたたえられていた。
+      </p>
+    </div>
+
+  </div>
+</section>
 
     <!-- about -->
     <section id="about" class="section">
