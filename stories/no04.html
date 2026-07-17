@@ -96,11 +96,6 @@
 </style>
 </head>
 <body>
-
-  <div class="stars"></div>
-</head>
-<body>
-
   <div class="stars"></div>
 
   <header class="site-header">
@@ -140,204 +135,224 @@
       <h2 class="section-title" style="margin-top:48px;"><span class="title-bracket">[</span> No.4 キャラクター <span class="title-bracket">]</span></h2>
 
 <!-- ここからグループスライダー -->
-      <div class="char-slider" id="slider-no04">
+<div class="char-slider" id="slider-no04">
 
-        <div class="char-slider-header">
-          <div class="char-group-info">
-            <div class="char-group-name" id="group-name-no04">患者たち</div>
-            <div class="char-group-desc" id="group-desc-no04">ヨツヅキ魔外者病院の患者たち。なぜか子供しかいない。</div>
+  <div class="char-slider-header">
+    <div class="char-group-info">
+      <div class="char-group-name" id="group-name-no04">患者たち</div>
+      <div class="char-group-desc" id="group-desc-no04">ヨツヅキ魔外者病院の患者たち。なぜか子供しかいない。</div>
+    </div>
+    <div class="char-nav">
+      <button class="char-nav-btn" id="prev-no04" onclick="slideGroup('no04', -1)" disabled>◂</button>
+      <span class="char-nav-counter" id="counter-no04">1 / 3</span>
+      <button class="char-nav-btn" id="next-no04" onclick="slideGroup('no04', 1)">▸</button>
+    </div>
+  </div>
+
+  <div class="char-groups" id="groups-no04">
+
+    <!-- グループ1: 患者たち -->
+    <div class="char-group active"
+         data-name="患者たち"
+         data-desc="ヨツヅキ魔外者病院の患者たち。なぜか子供しかいない。">
+
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ボクくん</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
           </div>
-          <div class="char-nav">
-            <button class="char-nav-btn" id="prev-no04" onclick="slideGroup('no04', -1)" disabled>◂</button>
-            <span class="char-nav-counter" id="counter-no04">1 / 3</span>
-            <button class="char-nav-btn" id="next-no04" onclick="slideGroup('no04', 1)">▸</button>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">メトリア</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
           </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">キトラ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ソウマ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ソウタ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">シグレ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">アイト</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">イツキ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">カズエ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">クレハ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">イロノ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ミツヨ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">カヨコ</div>
+            <div class="character-role" style="color: #000000;">記憶の無い少年</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
         </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
+      </div>
 
+    </div>
 
- <div class="char-groups" id="groups-no04">
+    <!-- グループ2: 医者と看護師 -->
+    <div class="char-group"
+         data-name="医者と看護師"
+         data-desc="ヨツヅキ魔外者病院の従事者、人ならざる者の風貌が漂う">
 
-          <!-- グループ1: 患者たち -->
-          <div class="char-group active"
-               data-name="患者たち"
-               data-desc="ヨツヅキ魔外者病院の患者たち。なぜか子供しかいない。">
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
 
-
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ボクくん</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">メトリア</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">キトラ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ソウマ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ソウタ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">シグレ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">アイト</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">イツキ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">カズエ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">クレハ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">イロノ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ミツヨ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">カヨコ</div>
-              <div class="character-role" style="color: #000000;">記憶の無い少年</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
- </div>
-
-
-<!-- グループ2:  医者と先生-->
-          <div class="char-group"
-               data-name="医者と看護師"
-               data-desc="ヨツヅキ魔外者病院の従事者、人ならざる者の風貌が漂う">
-
-            <div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">先生</div>
-              <div class="character-role" style="color: #000000;">役割(未設定)</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">イツメ</div>
-              <div class="character-role" style="color: #000000;">役割(未設定)</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-          
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">フツメ</div>
-              <div class="character-role" style="color: #000000;">臆病で冷徹な黒兎</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-          
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ミツメ</div>
-              <div class="character-role" style="color: #000000;">死神メイド</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-<div class="character-card" style="border-top-color: #A4C3D6;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ヨツメ</div>
-              <div class="character-role" style="color: #000000;">悪魔メイド</div>
-              <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
-            </div>
-
-
- </div>
-
-<!-- グループ3: 獄卒部異世界監視課 -->       
-          <div class="char-group"
-               data-name="獄卒部異世界監視課"
-               data-desc="いわくつきの病院に調査しに来た獄卒たち">
-
-            <div class="character-card" style="border-top-color: #000000;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">朝火　蛍</div>
-              <div class="character-role">役割</div>
-              <div class="character-desc">紹介文</div>
-            </div>
-
-            <div class="character-card" style="border-top-color: #000000;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ミカド</div>
-              <div class="character-role">役割</div>
-              <div class="character-desc">紹介文</div>
-            </div>
-
-            <div class="character-card" style="border-top-color: #000000;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ペトラ</div>
-              <div class="character-role">役割</div>
-              <div class="character-desc">紹介文</div>
-            </div>
-
-            <div class="character-card" style="border-top-color: #000000;">
-              <div class="character-portrait">立ち絵準備中</div>
-              <div class="character-name">ヨミキ</div>
-              <div class="character-role">役割</div>
-              <div class="character-desc">紹介文</div>
-            </div>
-
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">先生</div>
+            <div class="character-role" style="color: #000000;">役割(未設定)</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
           </div>
-          <!-- グループ3ここまで -->  
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">イツメ</div>
+            <div class="character-role" style="color: #000000;">役割(未設定)</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">フツメ</div>
+            <div class="character-role" style="color: #000000;">臆病で冷徹な黒兎</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ミツメ</div>
+            <div class="character-role" style="color: #000000;">死神メイド</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #A4C3D6;">
+            <div class="character-portrait">立ち絵準備中</div>
+            <div class="character-name">ヨツメ</div>
+            <div class="character-role" style="color: #000000;">悪魔メイド</div>
+            <div class="character-desc">キャラクターの紹介文をここに追加していきます。</div>
+          </div>
+
+        </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
+      </div>
+
+    </div>
+
+    <!-- グループ3: 獄卒部異世界監視課 -->
+    <div class="char-group"
+         data-name="獄卒部異世界監視課"
+         data-desc="いわくつきの病院に調査しに来た獄卒たち">
+
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
+
+          <div class="character-card" style="border-top-color: #000000;">
+            <div class="character-portrait"><img src="../images/Kei.png"></div>
+            <div class="character-name">朝火　蛍</div>
+            <div class="character-role">超期待の新人</div>
+            <div class="character-desc">紹介文</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #000000;">
+            <div class="character-portrait"><img src="../images/Mikado.png"></div>
+            <div class="character-name">ミカド</div>
+            <div class="character-role">警察組のおしゃれ担当？</div>
+            <div class="character-desc">紹介文</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #000000;">
+            <div class="character-portrait"><img src="../images/Petra.png"></div>
+            <div class="character-name">ペトラ</div>
+            <div class="character-role">真面目で苦労人の副隊長</div>
+            <div class="character-desc">紹介文</div>
+          </div>
+
+          <div class="character-card" style="border-top-color: #000000;">
+            <div class="character-portrait"><img src="../images/Yomiki.png"></div>
+            <div class="character-name">ヨミキ</div>
+            <div class="character-role">いつもけだるげな隊長</div>
+            <div class="character-desc">紹介文</div>
+          </div>
+
+        </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- グループスライダーここまで -->
 
 
       
@@ -372,6 +387,31 @@ function slideGroup(id, direction) {
   document.getElementById('prev-' + id).disabled = (next === 0);
   document.getElementById('next-' + id).disabled = (next === groups.length - 1);
 }
+
+function scrollChar(btn, direction) {
+  const track = btn.closest('.char-carousel').querySelector('.char-carousel-track');
+  const card = track.querySelector('.character-card');
+  const gap = 20;
+  const scrollAmount = card.offsetWidth + gap;
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.char-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.char-carousel-track');
+    const prevBtn = carousel.querySelector('.char-carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.char-carousel-btn.next');
+
+    function updateButtons() {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+
+    track.addEventListener('scroll', updateButtons);
+    updateButtons();
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarousels);
 </script>
 	
 
