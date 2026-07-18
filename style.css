@@ -661,7 +661,7 @@ text-align: center;
 .char-carousel-track .character-card {
   flex: 0 0 100%;
   max-width: 340px;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .char-carousel-btn {
@@ -693,7 +693,41 @@ text-align: center;
 .char-carousel-btn.next { right: -4px; }
 
 @media (max-width: 600px) {
-  .char-carousel-btn { display: none; } /* スマホはスワイプ操作のみ */
+  .char-carousel-track {
+    padding: 4px 40px;
+  }
+
+  .char-carousel-track .character-card {
+    flex: 0 0 82%;
+    max-width: 280px;
+  }
+
+  .char-carousel-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .char-carousel-btn.prev { left: 4px; }
+  .char-carousel-btn.next { right: 4px; }
+}
+
+/* 3枚以下のグループ:デスクトップはそのままグリッド、スマホだけ横スワイプに切り替え */
+@media (max-width: 600px) {
+  .char-group.active:not(:has(.char-carousel)) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .char-group.active:not(:has(.char-carousel)) > .character-card {
+    flex: 0 0 82%;
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
 }
 
 /* ---------- レスポンシブ ---------- */
