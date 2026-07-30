@@ -710,6 +710,8 @@ text-align: center;
 
   .char-carousel-btn.prev { left: 4px; }
   .char-carousel-btn.next { right: 4px; }
+
+
 }
 
 /* 3枚以下のグループ:デスクトップはそのままグリッド、スマホだけ横スワイプに切り替え */
@@ -727,6 +729,14 @@ text-align: center;
     flex: 0 0 82%;
     max-width: 280px;
     scroll-snap-align: start;
+  }
+/* ↓ここを追加 */
+  .char-group.active {
+    grid-template-columns: 1fr;
+  }
+
+  .character-portrait {
+    height: 300px;
   }
 }
 
