@@ -8,13 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
-<style>
-.character-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-</style>
 </head>
 <body>
 
@@ -56,33 +49,39 @@
 
       <h2 class="section-title" style="margin-top:48px;"><span class="title-bracket">[</span> No.2 キャラクター <span class="title-bracket">]</span></h2>
 
-      <div class="character-grid">
-        <div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Riris.png"></div>
-          <div class="character-name">リリス・<br>カルトリッカ</div>
-          <div class="character-role">主人公</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
-          </div>
-        </div>
+      <div class="char-carousel">
+        <button class="char-carousel-btn prev" onclick="scrollChar(this, -1)">◂</button>
+        <div class="char-carousel-track">
 
-        <div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Chesya.png"></div>
-          <div class="character-name">チェシャ</div>
-          <div class="character-role">楽観的な猫</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/Riris.png"></div>
+            <div class="character-name">リリス・<br>カルトリッカ</div>
+            <div class="character-role">主人公</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
+            </div>
           </div>
-        </div>
 
-        <div class="character-card" style="border-top-color: #AA2C1E;">
-          <div class="character-portrait"><img src="../images/Rook.png"></div>
-          <div class="character-name">ルーク</div>
-          <div class="character-role">心配性な狼</div>
-          <div class="character-desc">
-            キャラクターの紹介文をここに追加していきます。
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/Chesya.png"></div>
+            <div class="character-name">チェシャ</div>
+            <div class="character-role">楽観的な猫</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
+            </div>
           </div>
+
+          <div class="character-card" style="border-top-color: #AA2C1E;">
+            <div class="character-portrait"><img src="../images/Rook.png"></div>
+            <div class="character-name">ルーク</div>
+            <div class="character-role">心配性な狼</div>
+            <div class="character-desc">
+              キャラクターの紹介文をここに追加していきます。
+            </div>
+          </div>
+
         </div>
+        <button class="char-carousel-btn next" onclick="scrollChar(this, 1)">▸</button>
       </div>
 
       <div class="story-pager">
@@ -96,6 +95,33 @@
   <footer class="site-footer">
     <p>© 夜鍵幸 ― メアリーは魔女</p>
   </footer>
+
+<script>
+function scrollChar(btn, direction) {
+  const track = btn.closest('.char-carousel').querySelector('.char-carousel-track');
+  const card = track.querySelector('.character-card');
+  const gap = 20;
+  const scrollAmount = card.offsetWidth + gap;
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.char-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.char-carousel-track');
+    const prevBtn = carousel.querySelector('.char-carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.char-carousel-btn.next');
+
+    function updateButtons() {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+
+    track.addEventListener('scroll', updateButtons);
+    updateButtons();
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarousels);
+</script>
 
 </body>
 </html>
